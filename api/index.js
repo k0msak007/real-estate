@@ -20,8 +20,8 @@ const app = express();
 
 app.use(express.json())
 
-app.use("/api", userRouter)
-app.use("/api", authRouter)
+app.use("/api/user", userRouter)
+app.use("/api/auth", authRouter)
 
 // eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
